@@ -29,7 +29,7 @@
           >
           <ul class="list-header">
             <li class="item">
-              <a class="nav-list" href="index.html">Студия</a>
+              <a class="nav-list current" href="index.html">Студия</a>
             </li>
             <li class="item">
               <a class="nav-list" href="portfolio.html">Портфолио</a>
@@ -66,7 +66,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="big-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="button-main-page" type="button">
+          <button class="button-main-page" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -141,23 +141,26 @@
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list-our-work">
-            <li class="item">
+            <li class="item work">
               <img
                 src="./images/what_we_do/img1_work_progressive.jpg"
                 alt="написание кода"
               />
+              <p class="context-our-work">Десктопные приложения</p>
             </li>
-            <li class="item">
+            <li class="item work">
               <img
                 src="./images/what_we_do/img2_work_progressive.jpg"
                 alt="css"
               />
+              <p class="context-our-work">Мобильные приложения</p>
             </li>
-            <li class="item">
+            <li class="item work">
               <img
                 src="./images/what_we_do/img3_work_progressive.jpg"
                 alt="дизайн"
               />
+              <p class="context-our-work">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -487,5 +490,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-btn-img">
+            <use href="./images/icomoon_final/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
